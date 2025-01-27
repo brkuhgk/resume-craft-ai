@@ -1,0 +1,85 @@
+{
+    "personal_information": {
+        "name": "Solid Snake 2",
+        "location": "Dublin, Ireland",
+        "phone": "+1-781-911-7091",
+        "email": "hi@gmail.com",
+        "linkedin": "https://linkedin.com/in/thezucc",
+        "github": "https://github.com/lol"
+    },
+    "education_details": [
+        {
+            "education_level": "Master's Degree",
+            "institution": "Bob Academy",
+            "field_of_study": "Bobs Engineering",
+            "year_of_completion": "2023"
+        },
+        {
+            "education_level": "Bachelor's Degree",
+            "institution": "Bob Academy",
+            "field_of_study": "Bobs Engineering",
+            "year_of_completion": "2021"
+        }
+        
+    ],
+    "projects": [
+        {
+            "name": "X",
+            "description": "Y blah blah blah",
+            "link": "https://github.com/haveagoodday"
+        }
+    ],
+    "skills": [
+        "Python",
+        "Machine Learning",
+        "Data Analysis"
+    ],
+    "certifications": [
+        "Certified Data Scientist",
+        "AWS Certified Solutions Architect"
+    ],
+    "publications": [
+        "Research Paper on AI",
+        "Article on Machine Learning"
+    ],
+    "experience": [
+        {
+            "position": "X",
+            "company": "Y",
+            "employment_period": "06/2019 - Present",
+            "location": "San Francisco, CA",
+            "bullet_points": [
+                "Developed and deployed over 10 web applications using React and Node.js, enhancing user engagement by 30% through improved interface design and performance optimizations.",
+                "Collaborated with cross-functional teams in an Agile environment to design and implement 15+ new features, resulting in a 25% increase in application efficiency and user satisfaction.",
+                "Proactively troubleshot and resolved complex software issues, reducing average resolution time by 40% and improving overall system stability.",
+                "Actively participated in code reviews, contributing to a 20% decrease in bugs and maintaining high software quality standards through rigorous testing and feedback."
+            ]
+        },
+        {
+            "position": "Software Developer",
+            "company": "Innovatech",
+            "employment_period": "06/2015 - 12/2017",
+            "location": "Milan, Italy",
+            "bullet_points": [
+                "Led the development and maintenance of web applications utilizing modern technologies, resulting in a 15% increase in application performance and a 20% reduction in load times.",
+                "Collaborated closely with UX/UI designers to enhance user experience, achieving a customer satisfaction score of 90% on user feedback surveys.",
+                "Implemented automated testing procedures that improved code quality, reducing deployment errors by 35% and increasing team productivity by 20%.",
+                "Successfully delivered multiple projects on time by employing effective project management practices, which contributed to a 40% increase in team efficiency."
+            ]
+        },
+        {
+            "position": "Junior Developer",
+            "company": "StartUp Hub",
+            "employment_period": "01/2014 - 05/2015",
+            "location": "Florence, Italy",
+            "bullet_points": [
+                "Assisted in the development of mobile applications and web platforms, contributing to a project that increased user downloads by 50% within the first quarter post-launch.",
+                "Participated in code reviews and contributed to software design discussions, resulting in a 15% improvement in code maintainability and readability.",
+                "Resolved over 100 bugs and implemented feature enhancements that boosted application performance and user retention by 30%.",
+                "Gained experience in collaborative software development processes, fostering teamwork and communication among developers, which led to a more streamlined project workflow.",
+                "",
+                "These tailored bullet points align directly with the job description requirements and emphasize measurable outcomes to showcase relevant experience and skills effectively."
+            ]
+        }
+    ]
+}

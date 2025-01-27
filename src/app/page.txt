@@ -218,8 +218,8 @@ export default function Home() {
                   className="inline-block w-auto"
                 />
               </div>
-              <ul className="list-none list-inside mt-2 space-y-1">
-                {job.bullet_points.map((point, idx) => (
+              <ul className="list-disc list-inside mt-2">
+                {(Array.isArray(job.bullet_points) ? job.bullet_points : []).map((point, idx) => (
                   <li key={idx} className="ml-4">
                     <ContentEditable
                       html={point}
@@ -309,23 +309,28 @@ export default function Home() {
 
         <section className="mb-8 relative group">
           <h2 className="text-2xl font-bold border-b-2 border-gray-300 mb-4">Technical Skills</h2>
-          <div className="ml-4">
-            <ContentEditable
-              html={skills.join(', ')}
-              disabled={!(isEditing && editingField === 'skills')}
-              onChange={(e) => handleChange(e, 'skills')}
-              onDoubleClick={() => handleDoubleClick('skills')}
-              onBlur={handleBlur}
-              data-field="skills"
-              className="inline-block w-auto"
-            />
-          </div>
+          <ul className="list-disc list-inside">
+            {skills.map((skill, index) => (
+              <li key={index} className="ml-4">
+                <ContentEditable
+                  html={skill}
+                  disabled={!(isEditing && editingField === `skills_${index}`)}
+                  onChange={(e) => handleChange(e, 'skills', index)}
+                  onDoubleClick={() => handleDoubleClick(`skills_${index}`)}
+                  onBlur={handleBlur}
+                  data-field="skills"
+                  className="inline-block w-auto"
+                />
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section className="mb-8 relative group">
           <h2 className="text-2xl font-bold border-b-2 border-gray-300 mb-4">Certifications and Publications</h2>
           <div className="flex justify-between">
             <div className="w-1/2 pr-4">
+              {/* <h3 className="text-xl font-semibold">Certifications</h3> */}
               <ul className="list-disc list-inside mt-2">
                 {certifications.map((certification, index) => (
                   <li key={index} className="ml-4">
